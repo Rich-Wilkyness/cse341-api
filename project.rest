@@ -1,0 +1,4 @@
+# Local
+GET http://localhost:3000
+
+# Production Render
