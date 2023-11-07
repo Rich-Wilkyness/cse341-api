@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Diana",
+        "lastName": "Wilkerson",
+        "email": "dlvz10@gmail.com",
+        "favoriteColor": "green",
+        "birthday": "05/10/1998"
+    },
+    {
+        "firstName": "Aaron",
+        "lastName": "Wilkerson",
+        "email": "ajw6@gmail.com",
+        "favoriteColor": "red",
+        "birthday": "11/06/2000"
+    },
+    {
+        "firstName": "Colton",
+        "lastName": "Price",
+        "email": "cjp@gmail.com",
+        "favoriteColor": "blue",
+        "birthday": "09/6/1993"
+    }
+]
