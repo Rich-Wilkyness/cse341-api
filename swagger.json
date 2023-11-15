@@ -8,7 +8,6 @@
   "host": "cse341-api.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
@@ -35,7 +34,7 @@
         }
       }
     },
-    "/contacts/contacts/": {
+    "/contacts/": {
       "get": {
         "tags": [
           "Get All Contacts"
@@ -97,7 +96,7 @@
         }
       }
     },
-    "/contacts/contacts/{id}": {
+    "/contacts/{id}": {
       "get": {
         "tags": [
           "Get Contact"

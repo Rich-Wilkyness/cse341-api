@@ -1,6 +1,0 @@
-# Local
-GET http://localhost:3000
-
-# Production Render
-GET https://cse341-api.onrender.com
-
