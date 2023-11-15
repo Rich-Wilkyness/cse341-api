@@ -14,6 +14,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
 });
+app.use('/', require('./routes/index'));
+app.use('/', require('./routes/swagger'));
 app.use('/', require('./routes/contacts'));
 // make a change to update
 
