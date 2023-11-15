@@ -1,0 +1,50 @@
+# contacts.http
+@port = http://localhost:3000
+# this is an id to use, using it as a variable does not seem to work correctly: 6549eeb98c9eaeac9aa654cc
+
+# Get all contacts
+GET {{port}}/contacts
+
+###
+
+# Get a specific contact by ID
+# Replace ':id' with an actual ID from your database
+GET {{port}}/contacts/6549eeb98c9eaeac9aa654cc
+
+###
+
+# Create a new contact
+# Modify the JSON body according to your schema
+POST {{port}}/contacts
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "favoriteColor": "green",
+    "birthday": "05/10/2015"
+}
+
+###
+
+# Update an existing contact
+# Replace ':id' with an actual ID and modify the JSON body as needed
+PUT {{port}}/contacts/6549eeb98c9eaeac9aa654cc
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "favoriteColor": "purple",
+    "birthday": "05/10/2015"
+}
+
+###
+
+# Delete a contact
+# Replace ':id' with the ID of the contact you want to delete
+DELETE http://localhost:3000/contacts/65540250c6956e942b4350e2
+
+###

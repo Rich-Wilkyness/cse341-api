@@ -3,14 +3,15 @@ const router = express.Router();
 
 const contactsController = require('../controllers/contacts');
 
+router.get('/contacts/', contactsController.getAllContacts);
 
-// GET /feed/posts
-// router.get('/', (req, res) => {
-//     res.send('Hello World');
-// })
-// Get all contacts and all info on them
-router.get('/', contactsController.getAllContacts);
+router.get('/contacts/:id', contactsController.getContact);
 
-router.get('/:id', contactsController.getContact);
+router.post('/contacts/', contactsController.createContact);
+
+router.put('/contacts/:id', contactsController.updateContact);
+
+router.delete('/contacts/:id', contactsController.deleteContact);
+
 
 module.exports = router;
