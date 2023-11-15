@@ -7,7 +7,7 @@ const doc = {
     },
     // render: https://cse341-api.onrender.com
     // local: localhost:3000
-    host: "https://cse341-api.onrender.com",
+    host: "cse341-api.onrender.com",
     schemes: ["http", "https"]
 };
 
